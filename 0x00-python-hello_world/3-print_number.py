@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 number = 98
-"{} Battery street".format(number)
+string_format = "{} Battery street".format(number)
+print(string_format)
