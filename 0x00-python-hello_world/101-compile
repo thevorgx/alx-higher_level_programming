@@ -1,6 +1,2 @@
-#!/usr/bin/python3
-import os
-import py_compile
-path = os.environ["PYFILE"]
-print(path)
-py_compile.compile(path)
+#!/bin/bash
+python3 -m py_compile "$PYFILE"
