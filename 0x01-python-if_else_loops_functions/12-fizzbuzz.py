@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    str1 = "fizzBuzz"
-    str2 = "fizz"
+    str1 = "FizzBuzz"
+    str2 = "Fizz"
     str3 = "Buzz"
     space = " "
     for i in range(1, 100):
