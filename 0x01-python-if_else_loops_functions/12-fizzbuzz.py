@@ -13,5 +13,5 @@ def fizzbuzz():
             print("{}".format(str3), end='')
         else:
             print("{}".format(i), end='')
-        if i != 100:
+        if i != 101:
             print("{}".format(space), end='')
