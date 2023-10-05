@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import add_0 as vorg
-v = vorg.add(1, 2)
 a = 1
 b = 2
+v = vorg.add(a, b)
 
 print("{} + {} = {}".format(a, b, v))
