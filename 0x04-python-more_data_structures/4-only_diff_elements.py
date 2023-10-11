@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 def only_diff_elements(set_1, set_2):
-    set0 = set_1.union(set_2)
-    new_set = set(set0)
-    return (new_set)
+    set0 = set_1 ^ set_2
+    return (set0)
