@@ -3,17 +3,8 @@
 
 
 class Square:
-    """
-    Constructor method to initialize a Square object.
+    """Constructor method to initialize a Square object."""
 
-    Parameters:
-        size (int): The size of the square.
-    """
     def __init__(self, size):
-        """
-        Initialize a new Square with the given size.
-
-        Args:
-            size (int): The size of the square.
-        """
+        """Initialize a new Square with the given size."""
         self.__size = size

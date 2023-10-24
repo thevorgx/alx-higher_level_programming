@@ -3,12 +3,7 @@
 
 
 class Square:
-    """
-    Constructor method to initialize a Square object.
-
-    Parameters:
-        size (int): The size of the square.
-    """
+    """Constructor method to initialize a Square object."""
     def __init__(self, size=0):
         self.__size = size
         if not type(size) is int:
