@@ -3,5 +3,5 @@
 
 
 class Square:
-    def Square(self):
-        pass
+    """A basic class representing a square."""
+    pass
