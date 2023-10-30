@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Constructor method to initialize a Rectangle object."""
+
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle width the given width."""
         self.width = width
