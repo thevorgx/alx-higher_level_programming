@@ -4,10 +4,10 @@
 
 class Rectangle:
     """Constructor method to initialize a Rectangle object."""
-    def __init__(self, width=0, hight=0):
+    def __init__(self, width=0, height=0):
         """Initialize a new Rectangle with the given width."""
         self.__width = width
-        self.__hight = hight
+        self.__height = height
 
     @property
     def width(self):
@@ -24,14 +24,14 @@ class Rectangle:
             raise ValueError("width must be >= 0")
 
     @property
-    def hight(self):
-        """property hight"""
-        return (self.__hight)
+    def height(self):
+        """property height"""
+        return (self.__height)
 
-    @hight.setter
-    def hight(self, value):
-        """property setter width"""
-        self.__width = value
+    @height.setter
+    def height(self, value):
+        """property setter height"""
+        self.__height = value
         if not type(value) is int:
             raise TypeError("height must be an integer")
         if value < 0:
