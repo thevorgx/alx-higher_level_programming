@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
-def matrix_divided(matrix, div):
-    message = "matrix must be a matrix (list of lists) of integers/floats"
 
+def matrix_divided(matrix, div):
+    """matrix divide"""
+
+    message = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     elif div == 0:
