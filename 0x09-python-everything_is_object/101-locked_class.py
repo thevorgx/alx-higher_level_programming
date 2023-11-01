@@ -3,4 +3,5 @@
 
 
 class LockedClass:
+    """low memory cost"""
     __slots__ = ('first_name',)
