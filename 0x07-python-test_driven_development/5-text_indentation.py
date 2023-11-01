@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+"""prints a text"""
 
 
 def text_indentation(text):
-    """prints a text with 2 new lines after each of these chars: '.' '?' ':'"""
+    """prints a text"""
 
     if type(text) is not str:
         raise TypeError("text must be a string")
