@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+"""print square"""
 
 
-def print_square(size):
+def print_square(size=10):
     """print square"""
 
     message = "size must be an integer"
