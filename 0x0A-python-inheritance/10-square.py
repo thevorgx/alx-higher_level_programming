@@ -55,5 +55,4 @@ class Square(Rectangle):
 
     def area(self):
         """area implemented"""
-        res = self.__size ** 2
-        return (res)
+        return (self.__size ** 2)
