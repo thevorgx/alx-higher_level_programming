@@ -49,9 +49,9 @@ class Square(Rectangle):
     """Square child class"""
     def __init__(self, size):
         """Instantiation with width and height"""
+        self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
-        self.integer_validator("size", size)
 
     def area(self):
         """area implemented"""
