@@ -23,6 +23,8 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """Rectangle child class"""
+
     def __init__(self, width, height):
         """Instantiation with width and height"""
         self.__width = width
