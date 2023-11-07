@@ -12,6 +12,12 @@ class Student:
 
     def to_json(self, attrs=None):
         """to json method"""
-        if not isinstance(self, object):
-            return None
-        return (vars(self))
+        res = {}
+        key = 0
+        if attrs is None:
+            return (vars(self))
+        else:
+            for key in attrs:
+                if hasattr(self, key):
+                    res[key] = getattr(self, key)
+            return (res)
