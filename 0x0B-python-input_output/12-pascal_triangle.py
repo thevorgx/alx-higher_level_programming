@@ -5,6 +5,8 @@
 def pascal_triangle(n):
     """pascal triangle building blocks"""
     rlist = [[1]]
+    if n <= 0:
+        return ([])
     for i in range(n - 1):
         tmp = [0] + rlist[-1] + [0]
         row = []
