@@ -78,3 +78,8 @@ class Base:
     def load_from_file_csv(cls):
         """load from file csv"""
         pass
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """draw shapes"""
+        pass
