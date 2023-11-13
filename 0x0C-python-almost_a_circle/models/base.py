@@ -3,6 +3,7 @@
 
 
 import json
+import pandas as pd
 
 
 class Base:
@@ -68,3 +69,13 @@ class Base:
             created_inst_list = cls.create(**idx_data)
             mlist.append(created_inst_list)
         return (mlist)
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """save to file csv"""
+        pass
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """load from file csv"""
+        pass
