@@ -60,7 +60,7 @@ class Base:
         mlist = []
         try:
             with open(fname, 'r', encoding='utf-8') as f:
-                json_data = f.load(f)
+                json_data = f.read()
         except Exception:
             return (mlist)
         data_list = cls.from_json_string(json_data)
