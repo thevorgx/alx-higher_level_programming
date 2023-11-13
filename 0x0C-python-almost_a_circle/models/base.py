@@ -45,3 +45,10 @@ class Base:
             return (m_list)
         else:
             return (json.loads(json_string))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Dictionary to Instance"""
+        dummy = cls(1, 1)
+        dummy.update(**dictionary)
+        return (dummy)
