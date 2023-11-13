@@ -50,5 +50,7 @@ class Base:
     def create(cls, **dictionary):
         """Dictionary to Instance"""
         dummy = cls(1, 1)
+        if dummy is None:
+            return (dummy)
         dummy.update(**dictionary)
         return (dummy)
