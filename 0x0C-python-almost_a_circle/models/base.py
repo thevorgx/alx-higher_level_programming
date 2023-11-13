@@ -52,3 +52,19 @@ class Base:
         dummy = cls(1, 1)
         dummy.update(**dictionary)
         return (dummy)
+
+    @classmethod
+    def load_from_file(cls):
+        """load from json file"""
+        fname = f"{cls.__name__}.json"
+        mlist = []
+        try:
+            with open(fname, 'r', encoding='utf-8') as f:
+                json_data = f.load(f)
+        except Exception:
+            return (mlist)
+        data_list = cls.from_json_string(json_data)
+        for idx_data in data_list:
+            created_inst_list = cls.create(**idx_data)
+            mlist.append(created_inst_list)
+        return (mlist)
