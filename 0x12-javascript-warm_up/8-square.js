@@ -6,7 +6,7 @@ if (!isNaN(args[2]) && args.length === 3) {
   for (let i = 0; i < args[2]; i++) {
     let line = '';
     for (let j = 0; j < args[2]; j++) {
-      line += 'X ';
+      line += 'X';
     }
     console.log(line);
   }
