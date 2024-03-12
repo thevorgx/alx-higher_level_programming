@@ -7,13 +7,14 @@ function secondBig (array) {
     return (0);
   }
   for (let i = 1; i < array.length; i++) {
-    if (array[i] > biggest) {
+    const num = parseInt(array[i]);
+    if (num > biggest) {
       secBiggest = biggest;
-      biggest = array[i];
-    } else if (array[i] < biggest && array[i] > secBiggest) {
-      secBiggest = array[i];
+      biggest = num;
+    } else if (num < biggest && num > secBiggest) {
+      secBiggest = num;
     }
   }
-  return secBiggest;
+  return (secBiggest);
 }
 console.log(secondBig(args));
