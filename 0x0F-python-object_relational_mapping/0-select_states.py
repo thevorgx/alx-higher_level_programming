@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""select states by asc order"""
+
 import MySQLdb
 from sys import argv
 if __name__ == "__main__":
