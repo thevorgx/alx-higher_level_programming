@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""select states name that starts with 'N' by asc order"""
+"""retrieves rows from the 'states' table based on a provided term to find"""
 
 import MySQLdb
 from sys import argv
