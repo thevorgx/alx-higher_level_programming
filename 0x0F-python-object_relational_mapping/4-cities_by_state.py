@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""retrieves rows from the 'states' table based on a provided term to find"""
+"""retrieves name and id from the 'cities' table and join them in the
+'state' table where cities states id = states id"""
 
 import MySQLdb
 from sys import argv
