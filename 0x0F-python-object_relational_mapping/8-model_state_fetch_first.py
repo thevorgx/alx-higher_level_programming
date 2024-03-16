@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+"""retrieves first state name with the id at the beginning
+if the table states exist using sqlalchemy"""
 
 from sys import argv
 from sqlalchemy import create_engine
