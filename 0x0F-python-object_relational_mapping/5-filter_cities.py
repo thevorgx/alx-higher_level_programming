@@ -16,6 +16,7 @@ JOIN states ON cities.state_id = states.id
 ORDER BY cities.id;""")
     db_all_rows = cursor.fetchall()
     city_names = []
+    """future vorg: check previous task to remember whats row[2] & row[1]"""
     for row in db_all_rows:
         if row[2] == state_to_find:
             city_names.append(row[1])
