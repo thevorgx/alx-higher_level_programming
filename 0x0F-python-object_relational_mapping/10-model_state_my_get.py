@@ -13,7 +13,6 @@ if __name__ == "__main__":
                                                          argv[2], argv[3])
     to_find = argv[4]
     engine = create_engine(db_url)
-    Base.metadata.create_all(engine)
 
     make_session = sessionmaker(bind=engine)
     session = make_session()
