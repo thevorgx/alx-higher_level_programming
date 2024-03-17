@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""retrieves states name with the id at the beginning,
-ordered by the state.id using sqlalchemy"""
+"""join cities and states table where city.state_id = state.id
+and print state.name + city.id + city.name"""
 
 from sys import argv
 from sqlalchemy import create_engine
