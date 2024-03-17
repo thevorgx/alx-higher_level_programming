@@ -14,7 +14,7 @@ Here, you'll find a collection of projects related to Python, SQL, JavaScript an
 8. **0x07-python-test_driven_development**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x07-python-test_driven_development)
 9. **0x08-python-more_classes**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x08-python-more_classes)
 10. **0x09-python-everything_is_object**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x09-python-everything_is_object)
-11. **0x0A-python-inheritance**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x0A-python-inheritanc)
+11. **0x0A-python-inheritance**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x0A-python-inheritance)
 12. **0x0B-python-input_output**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x0B-python-input_output)
 13. **0x0C-python-almost_a_circle**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 14. **0x0D-SQL_introduction**: [Link](https://github.com/thevorgx/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
