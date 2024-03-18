@@ -15,9 +15,7 @@ if __name__ == "__main__":
 
     make_session = sessionmaker(bind=engine)
     session = make_session()
-    state_name = session.query(State).filter_by(name='California').first()
-    if not state_name:
-        state_name = State(name='California')
+    state_name = State(name='California')
     city_name = City(name='San Francisco')
     state_name.cities.append(city_name)
     session.add(state_name)
