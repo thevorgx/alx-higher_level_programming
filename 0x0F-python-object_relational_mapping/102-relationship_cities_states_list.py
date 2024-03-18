@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""<state id>: <state name>
-<tabulation><city id>: <city name>"""
+"""<city id>: <city name> -> <state name>"""
 
 from sys import argv
 from relationship_state import Base, State
@@ -19,6 +18,5 @@ if __name__ == "__main__":
 
     states = session.query(State).all()
     for state in states:
-        print("{}: {}".format(state.id, state.name))
         for city in state.cities:
-            print("\t{}: {}".format(city.id, city.name))
+            print("{}: {} -> {}".format(city.id, city.name, state.name))
