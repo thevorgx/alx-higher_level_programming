@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""retrieves first state name with the id at the beginning
-if the table states exist using sqlalchemy"""
+"""add a state and a city, the state can have a city attribute"""
 
 from sys import argv
 from relationship_state import Base, State
