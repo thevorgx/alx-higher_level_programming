@@ -15,5 +15,5 @@ if __name__ == "__main__":
     data = {'email': email_value}
     req = Request(url, urlencode(data))
     with urlopen(req) as response:
-        res = response.read()
-        print(res.decode('utf-8'))
+        res = response.read().decode("utf-8")
+        print(res)
