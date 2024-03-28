@@ -10,4 +10,4 @@ if __name__ == "__main__":
     email_value = argv[2]
     data = {'email': email_value}
     req = post(url, data=data)
-    print(req.content)
+    print(req.text)
