@@ -9,4 +9,4 @@ if __name__ == "__main__":
     url = argv[1]
     value = "X-Request-Id"
     res = get(url, data=value)
-    print(res.text)
+    print(res.headers.text)
