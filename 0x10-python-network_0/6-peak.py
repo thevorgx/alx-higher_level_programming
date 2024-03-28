@@ -7,12 +7,8 @@ def find_peak(list_of_integers):
     if not list_of_integers:
         return None
 
-    for i in range(len(list_of_integers)):
+    for i in range(1, (len(list_of_integers) - 1)):
         current_element = list_of_integers[i]
-
-        if i == 0:
-            continue
-
         left_value = list_of_integers[i - 1]
         right_value = list_of_integers[i + 1]
 
