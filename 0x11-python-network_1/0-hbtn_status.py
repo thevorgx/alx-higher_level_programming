@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""script that fetches an url"""
+
+
 from urllib.request import urlopen
 
 if __name__ == "__main__":
