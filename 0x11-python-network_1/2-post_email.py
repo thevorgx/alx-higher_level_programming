@@ -16,4 +16,4 @@ if __name__ == "__main__":
     req = Request(url, urlencode(data))
     with urlopen(req) as response:
         res = response.read()
-        print(res)
+        print(res.decode('utf-8'))
