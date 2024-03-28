@@ -1,3 +1,3 @@
 #!/bin/bash
-# comment for this script to test
-curl -o - -I "$1"
+# display the body of the response only if status code is 200
+if [ "$http_code" -eq 200 ]; then curl -sL "$1"; fi
