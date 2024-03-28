@@ -13,7 +13,7 @@ if __name__ == "__main__":
     url = argv[1]
     email_value = argv[2]
     data = {'email': email_value}
-    req = Request(url, urlencode(data).encode())
+    req = Request(url, urlencode(data))
     with urlopen(req) as response:
-        res = response.read().decode("utf-8")
+        res = response.read()
         print(res)
