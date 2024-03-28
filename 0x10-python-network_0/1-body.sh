@@ -1,3 +1,3 @@
 #!/bin/bash
 # display the body of the response only if status code is 200
-if [ "$http_code" -eq 200 ]; then curl -sL "$1"; fi
+[ "$(curl -o /dev/null -s -w "%{http_code}" "$1")" -eq 403 ] && curl -sL "$1"
