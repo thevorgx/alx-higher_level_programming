@@ -20,5 +20,5 @@ if __name__ == "__main__":
         for commit in data:
             commit_data = commit.get('commit')
             commiter = commit_data.get('author').get('name')
-            sha = commit.get('sha')
+            sha = commit_data.get('tree').get('sha')
             print("{}: {}".format(sha, commiter))
