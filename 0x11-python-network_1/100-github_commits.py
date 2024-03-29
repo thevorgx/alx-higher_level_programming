@@ -12,7 +12,7 @@ if __name__ == "__main__":
     res = get(url)
     data = res.json()
     count = 1
-
+    data.reverse()
     for commit in data:
         if count <= 10:
             commit_data = commit.get('commit')
