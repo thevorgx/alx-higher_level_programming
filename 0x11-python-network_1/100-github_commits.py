@@ -16,7 +16,7 @@ if __name__ == "__main__":
     for commit in data:
         if count <= 10:
             commit_data = commit.get('commit')
-            commiter = commit_data.get('committer').get('name')
+            commiter = commit_data.get('author').get('name')
             sha = commit_data.get('tree').get('sha')
             if commiter != "GitHub":
                 print("{}: {}".format(sha, commiter))
