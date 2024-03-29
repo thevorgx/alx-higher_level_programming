@@ -14,7 +14,9 @@ if __name__ == "__main__":
     except NameError:
         exit()
     url = f"https://api.github.com/repos/{user}/{repo}/commits?per_page=10"
-    res = get(url)
+    headers = {'Content-Type': 'application/json',
+               'Accept': 'application/vnd.github.v3+json'}
+    res = get(url, headers=headers)
     if res.status_code == 200:
         data = res.json()
         for commit in data:
