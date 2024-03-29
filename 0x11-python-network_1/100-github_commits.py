@@ -18,8 +18,7 @@ if __name__ == "__main__":
             commit_data = commit.get('commit')
             commiter = commit_data.get('author').get('name')
             sha = commit_data.get('tree').get('sha')
-            if commiter != "GitHub":
-                print("{}: {}".format(sha, commiter))
-                count += 1
+            print("{}: {}".format(sha, commiter))
+            count += 1
         else:
             break
