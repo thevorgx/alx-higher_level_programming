@@ -14,7 +14,7 @@ if __name__ == "__main__":
     count = 1
 
     for commit in data:
-        if count <= 30:
+        if count <= 10:
             commit_data = commit.get('commit')
             commiter = commit_data.get('committer').get('name')
             sha = commit_data.get('tree').get('sha')
