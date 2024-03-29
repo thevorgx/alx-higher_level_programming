@@ -6,8 +6,13 @@ from sys import argv
 from requests import get
 
 if __name__ == "__main__":
-    user = argv[1]
-    repo = argv[2]
+    try:
+        user = argv[1]
+        repo = argv[2]
+    except IndexError:
+        exit()
+    except NameError:
+        exit()
     url = f"https://api.github.com/repos/{user}/{repo}/commits?per_page=10"
     res = get(url)
     if res.status_code == 200:
