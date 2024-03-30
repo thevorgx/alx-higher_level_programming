@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""comment to update later"""
+"""from a repository, get the author name and commit sha using github api"""
 
 
 from sys import argv
@@ -7,8 +7,8 @@ from requests import get
 
 if __name__ == "__main__":
     try:
-        user = argv[1]
-        repo = argv[2]
+        repo = argv[1]
+        user = argv[2]
     except IndexError:
         exit()
     except NameError:
